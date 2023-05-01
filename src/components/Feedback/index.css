@@ -1,0 +1,98 @@
+/* Write your CSS code here. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.bg-container {
+  min-height: 100vh;
+  font-family: 'Roboto';
+  background-image: linear-gradient(to right, #ffeeee, #ffc0bb);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-card {
+  width: 75%;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+}
+
+.feedback-title {
+  color: #0f172a;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .feedback-title {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+}
+
+.feedback-emoji-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+  margin-top: 25px;
+  padding: 0px;
+}
+
+.emoji-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.emoji {
+  max-width: 60px;
+  width: 95%;
+  align-self: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .emoji {
+    max-width: 90px;
+    width: 95%;
+  }
+}
+
+.emoji-name {
+  color: #1e293b;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .emoji-name {
+    font-size: 18px;
+  }
+}
+
+.thank-you-caption {
+  color: #1e293b;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .thank-you-caption {
+    font-size: 18px;
+  }
+}
